@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Image Chrome Extension",
+  "version": "0.1",
+  "web_accessible_resources":[
+   "imgs/*.jpg"
+ ],
+ "content_scripts":[{
+      "matches":[
+        "<all_urls>"
+      ],
+      "js": ["image.js"]
+ }]
+
+}
